@@ -1,9 +1,10 @@
+
 #include<iostream>    
 #include<cstring>   
 #include<string>  
 using namespace std;    
 int Next[10001];  
-//ÇóKMPµÄNextÊı×é    
+//æ±‚KMPçš„Nextæ•°ç»„    
 void GetNext(const string& p)    
 {    
     int len=p.size();    
@@ -16,7 +17,7 @@ void GetNext(const string& p)
         {    
             i++;    
             j++;    
-            if(i==len||p.at(i)!=p.at(j))//²»ÔÊĞí³öÏÖP[i]==P[next[i]]    
+            if(i==len||p.at(i)!=p.at(j))//ä¸å…è®¸å‡ºç°P[i]==P[next[i]]    
                 Next[i]=j;    
             else    
                 Next[i]=Next[j];    
@@ -30,18 +31,18 @@ void GetNext(const string& p)
 }   
   
   
-//SÎªÄ¸´®£¬pÎªÆ¥Åä×Ó´®£¬Èç¹ûÆ¥Åä·µ»ØÆ¥ÅäÎ»ÖÃ£¬·ñÔò·µ»Ø-1    
+//Sä¸ºæ¯ä¸²ï¼Œpä¸ºåŒ¹é…å­ä¸²ï¼Œå¦‚æœåŒ¹é…è¿”å›åŒ¹é…ä½ç½®ï¼Œå¦åˆ™è¿”å›-1    
 int KMPSearch(const string& s,const string& p)    
 {    
     unsigned int Slen=s.size();    
     unsigned int Plen=p.size();  
-    //int *Next=new int[Plen];//NextÊı×é´æ´¢Î»ÖÃ    
+    //int *Next=new int[Plen];//Nextæ•°ç»„å­˜å‚¨ä½ç½®    
     
-    GetNext(p);//ÇóµÃNextÊı×é    
+    GetNext(p);//æ±‚å¾—Nextæ•°ç»„    
     
-    unsigned int i=0;//ÔÚS´®ÖĞµÄÏÂ±ê    
-    unsigned int j=0;//ÔÚP´®ÖĞµÄÏÂ±ê    
-    unsigned int count=0;//Æ¥Åä´®³öÏÖµÄ´ÎÊı  
+    unsigned int i=0;//åœ¨Sä¸²ä¸­çš„ä¸‹æ ‡    
+    unsigned int j=0;//åœ¨Pä¸²ä¸­çš„ä¸‹æ ‡    
+    unsigned int count=0;//åŒ¹é…ä¸²å‡ºç°çš„æ¬¡æ•°  
     while(i<Slen)    
     {    
         if(j==-1||s.at(i)==p.at(j))    
