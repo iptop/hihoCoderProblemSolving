@@ -2,13 +2,22 @@
 单点时限:1000ms
 内存限制:256MB
 描述
-Steven loves reading book on his phone. The book he reads now consists of N paragraphs and the i-th paragraph contains ai characters.
+Steven loves reading book on his phone.
+The book he reads now consists of N paragraphs and the i-th paragraph contains ai characters.
+Steven wants to make the characters easier to read, so he decides to increase the font size of characters.
+But the size of Steven's phone screen is limited. Its width is W and height is H.
+As a result, if the font size of characters is S then it can only show ⌊W / S⌋ characters
+in a line and ⌊H / S⌋ lines in a page. (⌊x⌋ is the largest integer no more than x)
+So here's the question, if Steven wants to control the number of pages no more than P,
+ what's the maximum font size he can set?
+ Note that paragraphs must start in a new line and there is no empty line between paragraphs.
 
-Steven wants to make the characters easier to read, so he decides to increase the font size of characters. But the size of Steven's phone screen is limited. Its width is W and height is H. As a result, if the font size of characters is S then it can only show ⌊W / S⌋ characters in a line and ⌊H / S⌋ lines in a page. (⌊x⌋ is the largest integer no more than x)
-
-So here's the question, if Steven wants to control the number of pages no more than P, what's the maximum font size he can set? Note that paragraphs must start in a new line and there is no empty line between paragraphs.
-
-Steven 喜欢用手机读书。
+Steven 喜欢用手机读书。他现在读的这边书有N段和弟i段的ai个字符组成。
+Steven想让阅读变得更容易，所以他决定增加字体的大小。
+但是Steven的手机屏幕大小是有限的。屏幕的宽度是W和,度是H。
+因此,如果S是字符的字体大小,那么它只能显示⌊W / S⌋字符在一行和⌊H / S⌋行在一个页面（⌊x⌋是最大的整数不超过x）
+这是一个问题,如果Steven想要控制的页面数量不超过P,那么最大字体可以设置多少？
+注意段落必须开始一个新行和段落之间没有空行。
 
 输入
 Input may contain multiple test cases.

@@ -1,0 +1,40 @@
+
+
+题目1 : Binary Watch
+时间限制:10000ms
+单点时限:1000ms
+内存限制:256MB
+描述
+Consider a binary watch with 5 binary digits to display hours (00 - 23) and 6 binary digits to display minutes (00 - 59).
+
+For example 11:26 is displayed as 01011:011010.  
+
+Given a number x, output all times in human-readable format "hh:mm" when exactly x digits are 1.  
+
+输入
+An integer x. (0 ≤ x ≤ 9)  
+
+输出
+All times in increasing order.  
+
+样例输入
+1
+样例输出
+00:01  
+00:02  
+00:04  
+00:08  
+00:16  
+00:32  
+01:00  
+02:00  
+04:00  
+08:00  
+16:00
+EmacsNormalVim
+
+题目大意
+
+假设一个二进制手表用5个二进制指针表示 (00 - 23)小时用6个二进制指针表示 (00 - 59)分钟。
+列如 11:26分显示成01011:011010。
+给定一个数字x，输出所有人类可读的“hh:mm”格式的恰好x个指针为1的时间
