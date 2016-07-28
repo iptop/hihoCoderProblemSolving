@@ -1,0 +1,36 @@
+题目2 : Popular Products
+时间限制:10000ms
+单点时限:1000ms
+内存限制:256MB
+描述
+Given N lists of customer purchase, your task is to find the products that appear in all of the lists.
+
+A purchase list consists of several lines. Each line contains 3 parts: the product id (format XXXX-XXXX), the purchase date (format mm/dd/yyyy) and the price (with decimal places). Two product are considered equal if both the product id and the price are equal.  
+
+输入
+The first line contains an integer N denoting the number of lists. (1 ≤ N ≤ 1000)
+
+Then follow N blocks. Each block describes one list.  
+
+The first line of each block contains an integer M denoting the number of products in the list. (1 ≤ M ≤ 50)
+
+M lines follow. Each line contains the product id, the purchase date and the price.  
+
+输出
+The products that appear in all of the lists. You should output the product id in increasing order.  
+
+If two different product share the same id (with different price) you should output the id twice.  
+
+样例输入
+3  
+2  
+1111-1111 07/23/2016 998.00  
+1111-2222 07/23/2016 888.00  
+2  
+1111-2222 07/23/2016 888.00  
+1111-1111 07/23/2016 998.00  
+2 
+1111-2222 07/23/2016 888.00  
+1111-1111 07/23/2016 999.00  
+样例输出
+1111-2222
